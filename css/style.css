@@ -53,6 +53,27 @@ body {
   background-color: #222;
 }
 
+/*
+//this is a rainbow UI if oyu want to add it
+body {  
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  background-size: 400% 400%;
+  animation: rainbow 10s ease infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+*/
 .maincontainer {
   display: flex;
   align-items:flex-start;
