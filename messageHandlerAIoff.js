@@ -1,4 +1,4 @@
-//if you want to use AIoff.js goto logic.js and simple change the bottom line to the name of this file
+//if you want to use AIoff.js goto logic.js and simple change the top line to the name of this file
 
 const handleMessage = (TwitchClient) => {
   const fs = require("fs");
