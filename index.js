@@ -28,6 +28,8 @@ app.on('window-all-closed', () => {
   }
 })
 
+
+
 app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
@@ -39,7 +41,7 @@ app.on('activate', () => {
 //This hack is to open links in default system browser. We can't do it from renderer?
 ipcMain.on('tmiclicked', (event, arg) => {
   event.returnValue = 'Message received!'
-  require('electron').shell.openExternal(`https://twitchapps.com/tmi/`);
+  require('electron').shell.openExternal(`https://tinyurl.com/hauak626`);
 })
 ipcMain.on('aiclicked', (event, arg) => {
   event.returnValue = 'Message received!'

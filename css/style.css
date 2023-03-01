@@ -46,6 +46,7 @@ p a {
   border: 2px solid;
 }
 
+
 body {
   font-family: 'Arial', sans-serif;
   color: #fff;
@@ -81,7 +82,8 @@ body {
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.4);
   font-size: 0.9em;
-  color:#fff
+  color:#fff;
+  box-shadow: 0 0 5px hsl(0, 0%, 0%);
 }
 .formcontainer input[type="password"] {
   width: 100%;
@@ -91,7 +93,9 @@ body {
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.4);
   font-size: 0.9em;
-  color:#fff
+  color:#fff;
+  box-shadow: 0 0 5px hsl(0, 0%, 0%);
+  
 }
 .formcontainer input[type="number"] {
   width: 100%;
@@ -101,14 +105,55 @@ body {
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.4);
   font-size: 0.9em;
-  color:#fff
+  color:#fff;
+  box-shadow: 0 0 5px hsl(0, 0%, 0%);
 }
 
 .formcontainer input[type="text"]:focus {
   background-color: #ddd;
   outline: none;
   color: black;
+  box-shadow: 0 0 5px hsl(0, 0%, 0%);
 }
+
+
+.MsgButton button {
+  width: 35%;
+  background: linear-gradient(to right, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8000ff, #ff00ff);
+  background-size: 1400% 1400%;
+  animation: rainbow 15s ease infinite;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.MsgButton button:hover {
+  animation: none;
+  background-color: #0052cc;
+}
+
+.MsgButton button:active {
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.5);
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 
 .CDbuttons {
   display: flex;
@@ -118,11 +163,13 @@ body {
 
 .CDbuttons button {
   width: 45%;
-  background-color: #00b8d4;
-  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(to right, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8000ff, #ff00ff);
+  background-size: 1400% 1400%;
+  animation: rainbow 15s ease infinite;
+  color: rgb(0, 0, 0);
   padding: 10px;
   margin: 8px 0;
-  border: none;
+  border: 1px solid #000000;
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.9em;
@@ -130,7 +177,30 @@ body {
 
 .CDbuttons button:hover {
   background-color: #0052cc;
+  transform: scale(1.1);
 }
+
+.CDbuttons button:active {
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.5);
+}
+
+.CDbuttons button i {
+  margin-right: 8px;
+  font-size: 1.1em;
+}
+
+.CDbuttons button.download i {
+  color: #0077b6;
+}
+
+.CDbuttons button.edit i {
+  color: #ee00da;
+}
+
+.CDbuttons button.delete i {
+  color: #ff0000;
+}
+
 
 .features {
   padding-left: 15px;

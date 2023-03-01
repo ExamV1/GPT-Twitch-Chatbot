@@ -12,13 +12,18 @@
             <input type="checkbox" id="password-toggle" />
           </div>
           <label for="username">Your username:</label>
-          <input type="text" class="lockable" id="username" name="username" />
+          <input type="text" placeholder="Type your username of the token your using" class="lockable" id="username" name="username" />
+          <label for="message">Send message from current loaded token:</label>
+          <input type="text" id="message" placeholder="Type your message here" name="message" />
+          <div class="MsgButton">
+            <button id="send-message">Send Message</button>
+          </div>
           <label for="channel">Twitch channel to load bot to:</label>
-          <input type="text" class="lockable" id="channel" name="channel" />
-          <label for="oauth">TMI oauth key:</label>
-          <input type="password" class="lockable" id="oauth" name="oauth" />
+          <input type="text" class="lockable" placeholder="Type the channel you want bot to connect to" id="channel" name="channel" />
+          <label for="oauth">Access Token:</label>
+          <input type="password" placeholder="Type your access/oauth token here" class="lockable" id="oauth" name="oauth" />
           <label for="aiKey">OpenAI api key:</label>
-          <input type="password" class="lockable" id="aiKey" name="aiKey" />
+          <input type="password" placeholder="Type your OpenAI key here" class="lockable" id="aiKey" name="aiKey" />
           <div class="unlockable">
           <label for="tokens"
             >Amount of tokens per request <br />* one token is roughly 4 chars
@@ -33,17 +38,22 @@
           <button value="start" id="submit">connect</button>
           <button value="disconnect" id="disconnect">disconnect</button>
         </div>
+
         <div class="CDbuttons">
           <button id="saveCreds">save credentials</button>
           <button id="loadCreds">load credentials</button>
         </div>
       </div>
+
+      
+
+
       <div class="features">
         <h1>Twitch AI chat bot</h1>
         <p>
-          1. to get TMI oauth key go to
-          <a id="tmilink" href="#">https://twitchapps.com/tmi/</a>, connect it
-          to twitch and copy the value of oauth key
+          1. to get Access Token go to
+          <a id="tmilink" href="#">https://tinyurl.com/hauak626</a>, authorize it then copy the one that says 'ACCESS TOKEN'
+          
         </p>
         <p>
           2. to get OpenAI api key go to
@@ -95,5 +105,8 @@ once you've loaded the file it is stored in root directory of the bot as 'stopli
       require("./banwords.js");
     </script>
   
+
+  
+
   </body>
 </html>

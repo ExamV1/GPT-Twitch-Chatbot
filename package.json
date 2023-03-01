@@ -1,5 +1,5 @@
 {
-  "name": "twitchgpt3chatbot",
+  "name": "Twitch Chat GPT bot",
   "version": "1.0.0",
   "description": "twitch chat bot that uses GPT-3 to reply to chat messages",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "author": "irisrumtub <irisrumtub@wearehackerone.com>",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^22.0.0",
+    "electron": "^22.3.1",
     "electron-builder": "^23.6.0"
   },
   "dependencies": {

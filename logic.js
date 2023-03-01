@@ -1,8 +1,8 @@
 const electron = require("electron");
 const ipc = electron.ipcRenderer;
 const newConnectToTwitch = require("./connectToTwitch");
-const handleMessage = require("./messageHandler")
-
+const handleMessage = require("./messageHandlerAIon")
+//const handleMessage = require("./messageHandlerAIoff")
 //use twurple instead
 
 
