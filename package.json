@@ -1,5 +1,5 @@
 {
-  "name": "Twitch Chat GPT bot",
+  "name": "twitchchatgptbot",
   "version": "1.0.0",
   "description": "twitch chat bot that uses GPT-3 to reply to chat messages",
   "main": "index.js",
